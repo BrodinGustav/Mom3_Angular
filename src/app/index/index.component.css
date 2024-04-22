@@ -1,10 +1,40 @@
+.img_container{
+    max-width: 100%;
+}
+
 img{
+    display: flex;
+    justify-content: center;
+    margin:0 auto;
+    margin-top:3em;
+    margin-bottom:3em;
     width:650px;
     height:auto;
-    margin:0 auto;
     box-shadow:5px 10px 10px black;
 }
 
 body{
     background-color: lightblue;
+}
+
+@media (min-width: 320px) and (max-width: 425px){
+    img{
+        width:250px;
+        height:auto;
+    }
+    }
+
+    @media (min-width: 425px) and (max-width: 768px){
+        img{
+            width:350px;
+            height:auto;
+        }
+        }
+
+
+@media (min-width: 768px) {
+img{
+    width:450px;
+    height:auto;
+}
 }

@@ -1,7 +1,21 @@
-<nav>
+<hr>
+<header>
+<div class="menu-toggle" (click)="toggleMenu()">
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+</div>
+
+<nav [ngClass]="{'open': isMenuOpen}">
+    <div class="close-icon" *ngIf="isMenuOpen" (click)="toggleMenu()"> <!--*ngIf ser till att stängicon bara synd vid öppen meny-->
+        <div class="CloseBar1"></div>
+        <div class="CloseBar2"></div>
+      </div>
     <ul>
         <li><a routerLink="/">Startsida</a></li>
         <li><a routerLink="/about">Om</a></li>
         <li><a routerLink="/convert">Konvertera</a></li>
     </ul>
 </nav>
+</header>
+<hr>
