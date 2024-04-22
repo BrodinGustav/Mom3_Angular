@@ -6,12 +6,14 @@
     </div>
     <div>
     <label for="celcius">Celcius:</label>
-    <input type="number" id="celcius">
+    <input type="number" id="celcius" [(ngModel)] = "celcius">
 </div>
 <div>
-    <button>Konvertera</button>
+    <button (click)=convertMeterToFoot()>Konvertera till fot</button>
+    <button (click)=convertCelciusToFahrenheit()>Konvertera till fahrenheit</button>
+    <button (click)=clearConvert()>Rensa</button>
 </div>
 <div>
-<p>Fot:</p>
-<p>Fahrenheit:</p>
+<p>Fot:{{ resultFot }}</p>
+<p>Fahrenheit: {{ resultFahrenheit }}</p>
 </div>
