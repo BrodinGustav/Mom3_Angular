@@ -1,0 +1,10 @@
+img{
+    width:650px;
+    height:auto;
+    margin:0 auto;
+    box-shadow:5px 10px 10px black;
+}
+
+body{
+    background-color: lightblue;
+}
