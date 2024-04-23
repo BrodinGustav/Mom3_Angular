@@ -1,10 +1,9 @@
 <h2>Konvertera</h2>
-
-<div>
+<div class="container">
+<div class="form">
     <label for="meter">Meter:</label>
     <input type="number" id="meter" [(ngModel)] ="meter">
-    </div>
-    <div>
+
     <label for="celcius">Celcius:</label>
     <input type="number" id="celcius" [(ngModel)] = "celcius">
 </div>
@@ -16,4 +15,5 @@
 <div class="result">
 <p>Fot:{{ resultFot }}</p>
 <p>Fahrenheit: {{ resultFahrenheit }}</p>
+</div>
 </div>
