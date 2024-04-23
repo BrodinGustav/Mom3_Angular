@@ -22,6 +22,7 @@
     <p>Bild har lagts in under mappen assets/pictures för att sedan länkas genom index.component.html.</p>
     <p>Global css styling har använts via app.component.css varpå speckfik styling gjotrs genom respektive komponents css.</p>
     <p>Navigation är kodad i egen komponent (nav) som sedan implementeras till vardera undersida genom att importeras i app.component.ts och länkad genom routerLink via nav.component.html</p>
+    <p>Routes för undersidor är justerat i app.routes.ts där komponent för vardera undersida exporteras, samt importeras. </p>
     <p>Konvertering har gjorts genom att skapa ett enkelt formulär på convert.component.html. Därpå har FormsModule importeras via convert-component.ts för möjligheten att läsa in 
         formulär via Angular. Därpå har en klass skapats (ConvertComponent) vilken innehåller variabler och metoder för själva konverteringen.   
         <p>För att lägga in en komponent på undersidan "about" har jag skapat komponenten "assignment" i vilken jag lagt in text-element. Sen renderas sidan about av Angular genom
